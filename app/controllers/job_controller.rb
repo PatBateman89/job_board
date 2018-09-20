@@ -9,7 +9,7 @@ class JobController < ApplicationController
 
   def craigslist_scrape
 
-    require 'Nokogiri'
+
     require "open-uri"
 
     doc = Nokogiri::HTML(open("http://www.eslcafe.com/jobs/korea/").read)
